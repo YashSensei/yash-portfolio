@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0C134F;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1D267D;
+    padding: 20px;
+
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background-color: #00000033;
+    border-bottom: solid 0.2px rgba(245, 245, 245, 0.204);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.355);
+    border-radius: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #87CEEB;
+}
+.hero span:hover{
+    color: rgb(178, 140, 255);
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    
+}
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 80px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #EECDCD;
+    padding: 2.5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #f29b9b;
+}
+main {
+    padding: 20px;
+    margin: 10px;
+}
+
+.project {
+    background-color: #5C469C;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.project h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.pro {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.pro div {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(0, 136, 255, 0.479);
+    border-radius: 7px;
+}
+
+.pro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1D267D;
+    padding: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+footer a:hover {
+    color: #87CEEB; 
+}
+.right{
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
+}

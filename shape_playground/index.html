@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Shape Playground</h1>
+    <div class="playground">
+        <div class="shape circle" onclick="this.style.borderRadius = this.style.borderRadius === '0%' ? '50%' : '0%'">
+            <span class="shape-name">Circle</span>
+        </div>
+        <div class="shape square" onclick="this.style.transform = this.style.transform === 'rotate(45deg)' ? 'rotate(0deg)' : 'rotate(45deg)'">
+            <span class="shape-name">Square</span>
+        </div>
+        <div class="shape triangle" onclick="this.style.borderBottomColor = getRandomColor()">
+            <span class="shape-name temp">Triangle</span>
+        </div>
+        <div class="shape pentagon" onclick="this.style.transform = this.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+            <span class="shape-name">Pentagon</span>
+        </div>
+        <div class="shape star" onclick="this.style.clipPath = this.style.clipPath === 'none' ? 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)' : 'none'">
+            <span class="shape-name">Star</span>
+        </div>
+        <div class="shape hexagon" onclick="this.style.backgroundColor = getRandomColor()">
+            <span class="shape-name">Hexagon</span>
+        </div>
+    </div>
+
+    <script>
+        function getRandomColor() {
+            return '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script>
+</body>
+</html>
